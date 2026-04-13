@@ -30,7 +30,11 @@ Redoc: http://localhost:8000/redoc
 
 Основные эндпоинты:
 POST/auth/register Регистрация нового пользователя
+
 POST/auth/login Получение JWT-токена
+
 GET/auth/me Получение данных о текущем пользователе
+
 POST/auth/createtask Создание новой задачи (требует Auth)
+
 GET/auth/ Получение списка всех задач пользователя
