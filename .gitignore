@@ -1,0 +1,36 @@
+# --- Python ---
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+venv/
+ENV/
+env/
+build/
+dist/
+.python-version
+
+# --- FastAPI / App ---
+.env
+*.db
+*.sqlite3
+
+# --- Пакетные менеджеры (Poetry/Pip) ---
+
+.pytest_cache/
+.coverage
+htmlcov/
+
+# --- Docker
+pgdata/
+mysql_data/
+
+# --- IDE (Visual Studio Code, PyCharm) ---
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# --- OS ---
+.DS_Store
+Thumbs.db
