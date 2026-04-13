@@ -11,7 +11,7 @@ ORM: SQLAlchemy 2.0 (Async) + Alembic
 
 Установка и запуск:
 1. Клонировние репозитория
-git clone https://github.com/ВАШ_ЛОГИН/ВАШ_РЕПО.git
+git clone https://github.com/leadaxid-spec/task-tracker-api.git
 
 2. Настройка окружения
 Создать файл .env в корне проекта на основе примера .env.example
@@ -27,20 +27,6 @@ docker-compose up --build
 После запуска доступна интерактивная документация:
 Swagger UI: http://localhost:8000/docs — для тестирования эндпоинтов.
 Redoc: http://localhost:8000/redoc 
-
-Структура проекта
-├── app/
-│   ├── core/           # Конфигурация, безопасность (JWT, хэширование)
-│   ├── database.py     # SQLAlchemy модели базы данных
-│   ├── task.py         # модель базы данных
-│   ├── user.py         # модель базы данных
-│   ├── schemas.py      # Pydantic модели (валидация данных)
-│   ├── auth.py         # Роутеры для авторизации и задач
-│   └── main.py         # Инициализация FastAPI приложения
-├── alembic/            # История миграций базы данных
-├── docker-compose.yml  # Описание сервисов (app, db)
-├── Dockerfile          # Сборка образа приложения
-└──  pyproject.toml      # Зависимости Poetry
 
 Основные эндпоинты:
 POST/auth/register Регистрация нового пользователя
